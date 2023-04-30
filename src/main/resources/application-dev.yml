@@ -1,0 +1,29 @@
+app:
+  jwt:
+    token:
+      access:
+        expiration: 86400000
+        key: 22MYlyBwOd$gXWUjlfZW0aA
+      refresh:
+        expiration: 604800000
+        key: 22MYlyBwOd$gXWUjlfZW0aA
+spring:
+  datasource:
+    password: 12
+    url: jdbc:postgresql://localhost:5433/app_csv
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sirojiddinit@gmail.com
+    password: iatltworrfvqpdkf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
